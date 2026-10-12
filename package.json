@@ -1,0 +1,29 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "Hello React",
+  "keywords": [
+    "hello"
+  ],
+  "license": "ISC",
+  "author": "chiru",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@parcel/transformer-less": "^2.16.4",
+    "less": "^4.9.1",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^6.30.6"
+  },
+  "browsersList": [
+    "last 2 versions"
+  ]
+}

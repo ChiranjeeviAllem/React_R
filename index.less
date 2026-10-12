@@ -1,0 +1,95 @@
+@ink: #1d2624;
+@muted: #4f5e59;
+@green: #176b54;
+@green-dark: #10533f;
+@canvas: #f6f8f7;
+@line: #e5eae7;
+
+:root {
+  font-family: "Avenir Next", Avenir, sans-serif;
+  color: @ink;
+  background: @canvas;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  min-height: 76px;
+  padding: 0 7vw;
+  background: #fff;
+  border-bottom: 1px solid @line;
+
+  .site-brand {
+    color: @ink;
+    font-size: 20px;
+    font-weight: 750;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .site-navigation,
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .navigation-link {
+    color: @muted;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 160ms ease;
+
+    &:hover {
+      color: @green;
+    }
+  }
+
+  .login-link {
+    padding: 10px 18px;
+    border-radius: 4px;
+    background: @green;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: background-color 160ms ease;
+
+    &:hover {
+      background: @green-dark;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 16px 22px;
+    padding: 16px 20px;
+
+    .site-navigation,
+    .header-actions {
+      gap: 18px;
+    }
+
+    .header-actions {
+      margin-left: auto;
+    }
+  }
+}
